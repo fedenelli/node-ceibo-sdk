@@ -2,13 +2,13 @@
 Ceibo API Wrapper for NodeJS
 
 ### Usage ###
-```
+```js
 const Ceibo = require('node-ceibo-sdk'); // Import to project
 
 const CeiboApi = new Ceibo('myuser', 'mykey'); // Initialize with user and key
 
 CeiboApi.getOffer('some_dni' [, 'some_cuil']) // Get Offer for a DNI (optionally you can add a CUIL Number) 
-```javascript
+```
 
 ### Methods ###
 
