@@ -8,7 +8,7 @@ const Ceibo = require('node-ceibo-sdk'); // Import to project
 const CeiboApi = new Ceibo('myuser', 'mykey'); // Initialize with user and key
 
 CeiboApi.getOffer('some_dni' [, 'some_cuil']) // Get Offer for a DNI (optionally you can add a CUIL Number) 
-```
+```javascript
 
 ### Methods ###
 
@@ -22,6 +22,8 @@ Test using `node test` and using the following parameters.
 
 Params:
 
+| Param  | Description                    |
+|--------|--------------------------------|
 | -u     | User for API Authentication    |
 | -k     | Key for API Authentication     |
 | --dni  | DNI to check offer             |
