@@ -1,0 +1,12 @@
+{
+  "name": "node-ceibo-sdk",
+  "version": "0.0.1",
+  "description": "Ceibo API Wrapper for NodeJS",
+  "main": "index.js",
+  "repository": "https://fedenelli@bitbucket.org/fedenelli/node-ceibo-sdk.git",
+  "author": "Federico Nelli <fn.nelli@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.20.0"
+  }
+}
