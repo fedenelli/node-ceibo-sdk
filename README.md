@@ -1,29 +1,28 @@
-# README #
+# Ceibo NodeJS SDK #
+Ceibo API Wrapper for NodeJS
 
-This README would normally document whatever steps are necessary to get your application up and running.
+### Usage ###
+```
+const Ceibo = require('node-ceibo-sdk'); // Import to project
 
-### What is this repository for? ###
+const CeiboApi = new Ceibo('myuser', 'mykey'); // Initialize with user and key
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+CeiboApi.getOffer('some_dni' [, 'some_cuil']) // Get Offer for a DNI (optionally you can add a CUIL Number) 
+```
 
-### How do I get set up? ###
+### Methods ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+| Method      | Type                           | Params               |
+|-------------|--------------------------------|----------------------|
+| new Ceibo() | Constructor                    | user, key            |
+| getOffer    | Promise                        | dni, cuit (optional) |
 
-### Contribution guidelines ###
+### How to Test ###
+Test using `node test` and using the following parameters.
 
-* Writing tests
-* Code review
-* Other guidelines
+Params:
 
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+| -u     | User for API Authentication    |
+| -k     | Key for API Authentication     |
+| --dni  | DNI to check offer             |
+| --cuil | (optional) CUIL to check offer |
